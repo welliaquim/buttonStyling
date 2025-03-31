@@ -9,7 +9,7 @@ function App() {
           <Button variant="primary" text="Primary"></Button>
           <Button variant="secondary" text="Secondary"></Button>
           <Button variant="danger" text="Danger"></Button>
-          <Button variant="sucess" text="Success"></Button>
+          <Button variant="success" text="Success"></Button>
         </div>
       </div>
     </>
