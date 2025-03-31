@@ -1,28 +1,38 @@
 import Button from "./Components/Button";
+import Card from "./Components/Card";
 import Input from "./Components/Input";
 import "./input.css";
-import IconError from "./assets/icon-error.png";
-import IconSuccess from "./assets/icon-sucess.png";
+import { XCircle, CheckCircle } from "lucide-react";
 
 function App() {
   return (
     <>
       <div className="bg-gray-700 w-full h-screen flex flex-col gap-8 justify-center items-center">
-        <div className="bg-gray-950 w-[450px] h-52 flex justify-center items-center rounded-md border-2 border-gray-800 gap-4">
+        <Card w="w-[450px]" h="h-52" gap="gap-4">
           <Button variant="primary" text="Primary"></Button>
           <Button variant="secondary" text="Secondary"></Button>
           <Button variant="danger" text="Danger"></Button>
           <Button variant="success" text="Success"></Button>
-        </div>
-        <div className="bg-gray-950 w-[450px] h-52 flex flex-col justify-center items-center rounded-md border-2 border-gray-800 gap-4">
-          <Input placeholder="Digite seu nome" variant="default" />
+        </Card>
+        <Card w="w-[500px]" h="h-64" flexType="flex-col">
           <Input
-            placeholder="Email inválido"
-            variant="error"
-            icon={IconError}
+            label="Email"
+            placeholder="Digite seu email!"
+            variant="default"
           />
-          <Input placeholder="Sucesso!" variant="success" icon={IconSuccess} />
-        </div>
+          <Input
+            label="Email"
+            placeholder="Email inválido!"
+            variant="error"
+            icon={XCircle}
+          />
+          <Input
+            label="Sucesso"
+            placeholder="Sucesso!"
+            variant="success"
+            icon={CheckCircle}
+          />
+        </Card>
       </div>
     </>
   );
