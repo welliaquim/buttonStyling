@@ -8,13 +8,13 @@ function App() {
   return (
     <>
       <div className="bg-gray-700 w-full h-screen flex flex-col gap-8 justify-center items-center">
-        <Card w="w-[450px]" h="h-52" gap="gap-4">
+        <Card gap="gap-4" flexWrap="flex-wrap-reverse">
           <Button variant="primary" text="Primary"></Button>
           <Button variant="secondary" text="Secondary"></Button>
           <Button variant="danger" text="Danger"></Button>
           <Button variant="success" text="Success"></Button>
         </Card>
-        <Card w="w-[500px]" h="h-64" flexType="flex-col">
+        <Card h="h-64" flexType="flex-col">
           <Input
             label="Email"
             placeholder="Digite seu email!"
