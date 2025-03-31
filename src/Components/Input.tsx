@@ -3,7 +3,7 @@ import { LucideIcon } from "lucide-react";
 import { InputHTMLAttributes } from "react";
 
 type InputProps = InputHTMLAttributes<HTMLInputElement> & {
-  label?: "string";
+  label?: string;
   variant: "default" | "error" | "success";
   icon?: LucideIcon;
 };
