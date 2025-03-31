@@ -11,7 +11,7 @@ export default function Button({ text, variant = "primary" }: ButtonProps) {
     primary: "bg-blue-500 hover:bg-blue-600",
     secondary: "bg-gray-500 hover:bg-gray-600",
     danger: "bg-red-500 hover:bg-red-600",
-    sucess: "bg-green-700 hover:bg-green-800",
+    success: "bg-green-700 hover:bg-green-800",
   };
   return (
     <button
